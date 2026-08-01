@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yukihiro Kimura</title>
+<meta name="description" content="Site Reliability Engineer in Tokyo. Writing about agent-driven development, infrastructure, and observability.">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yukihiro Kimura">
+<meta property="og:description" content="Site Reliability Engineer in Tokyo. Writing about agent-driven development, infrastructure, and observability.">
+<meta property="og:url" content="https://yukihirokimura.com/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
+
+<style>
+  :root {
+    --bg:      #fdfdfc;
+    --fg:      #1a1a18;
+    --muted:   #6b6b66;
+    --rule:    #e4e4e0;
+    --accent:  #b4472f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:     #14140f;
+      --fg:     #eae8e3;
+      --muted:  #96948d;
+      --rule:   #2c2c26;
+      --accent: #e8836a;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: clamp(3rem, 12vh, 8rem) 1.5rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                 "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main { max-width: var(--measure); margin: 0 auto; }
+
+  h1 {
+    margin: 0 0 .75rem;
+    font-size: clamp(1.9rem, 6vw, 2.5rem);
+    font-weight: 620;
+    letter-spacing: -.021em;
+    line-height: 1.15;
+  }
+
+  .subtitle {
+    margin: 0 0 2.75rem;
+    color: var(--muted);
+    font-size: 1.02rem;
+    text-wrap: pretty;
+  }
+
+  h2 {
+    margin: 0 0 .9rem;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
+
+  section + section { margin-top: 2.5rem; }
+
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 .6rem;
+    align-items: baseline;
+    padding: .55rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  li:last-child { border-bottom: 1px solid var(--rule); }
+
+  a {
+    color: var(--fg);
+    text-decoration: none;
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 100% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .18s ease, color .18s ease;
+  }
+  a:hover, a:focus-visible {
+    color: var(--accent);
+    background-size: 100% 2px;
+  }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .note { color: var(--muted); font-size: .9rem; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .82rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Yukihiro Kimura</h1>
+  <p class="subtitle">
+    Site Reliability Engineer in Tokyo. I work on infrastructure, observability,
+    and how much of the work can actually be handed to coding agents.
+  </p>
+
+  <section>
+    <h2>Writing</h2>
+    <ul>
+      <li><a href="https://zenn.dev/yukihirokimuraj">Zenn</a> <span class="note">Japanese</span></li>
+      <li><a href="https://dev.to/CHANGEME">DEV</a> <span class="note">English</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Code</h2>
+    <ul>
+      <li><a href="https://github.com/YukihiroKimuraJ">GitHub</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul>
+      <li><a href="https://x.com/CHANGEME">X</a></li>
+      <li><a href="mailto:me@yukihirokimura.com">me@yukihirokimura.com</a></li>
+    </ul>
+  </section>
+
+  <footer>Tokyo, Japan</footer>
+</main>
+</body>
+</html>
