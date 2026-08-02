@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "yukihirokimura-com",
+  "compatibility_date": "2026-08-02",
+
+  // Only ./public is uploaded. Pointing this at the repo root ships .git/ as
+  // publicly fetchable static assets — /.git/config, /.git/objects/* and the
+  // rest become readable over HTTP.
+  "assets": {
+    "directory": "./public"
+  },
+
+  // Once the custom domain is attached, flip this to false to retire the
+  // *.workers.dev URL — the account subdomain is derived from the account
+  // name and ends up in the hostname.
+  "workers_dev": true,
+
+  "observability": {
+    "enabled": true
+  }
+}
