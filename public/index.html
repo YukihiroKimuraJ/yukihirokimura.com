@@ -100,6 +100,11 @@
     li { grid-template-columns: 1fr; }
   }
 
+  .projects li { grid-template-columns: 11rem 1fr; }
+  @media (max-width: 32rem) {
+    .projects li { grid-template-columns: 1fr; }
+  }
+
   a {
     color: var(--fg);
     justify-self: start;
@@ -133,6 +138,15 @@
     and how much of the work can actually be handed to coding agents.
   </p>
   <p class="stack">Claude Code<span>/</span>AWS<span>/</span>Terraform<span>/</span>Python</p>
+
+  <section>
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li><a href="https://github.com/YukihiroKimuraJ/error-budget-calc">error-budget-calc</a> <span class="note">SLO error budgets</span></li>
+      <li><a href="https://github.com/YukihiroKimuraJ/kev-notifier">kev-notifier</a> <span class="note">CISA KEV → Slack, in Go</span></li>
+      <li><a href="https://github.com/YukihiroKimuraJ/cloudops-monitor">cloudops-monitor</a> <span class="note">endpoint monitoring, in Go</span></li>
+    </ul>
+  </section>
 
   <section>
     <h2>Writing</h2>
