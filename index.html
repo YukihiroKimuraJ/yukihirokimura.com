@@ -77,44 +77,43 @@
     font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
   }
 
-  section + section { margin-top: 2.5rem; }
+  section + section { margin-top: 2.25rem; }
 
   ul { margin: 0; padding: 0; list-style: none; }
 
   li {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 .6rem;
+    display: grid;
+    grid-template-columns: 5rem 1fr;
     align-items: baseline;
-    padding: .55rem 0;
-    border-top: 1px solid var(--rule);
+    padding: .3rem 0;
   }
-  li:last-child { border-bottom: 1px solid var(--rule); }
+  @media (max-width: 26rem) {
+    li { grid-template-columns: 1fr; }
+  }
 
   a {
     color: var(--fg);
-    text-decoration: none;
-    background-image: linear-gradient(var(--accent), var(--accent));
-    background-size: 100% 1px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size .18s ease, color .18s ease;
+    justify-self: start;
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    transition: color .2s ease, text-decoration-color .2s ease;
   }
   a:hover, a:focus-visible {
     color: var(--accent);
-    background-size: 100% 2px;
+    text-decoration-color: var(--accent);
   }
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 
-  .note { color: var(--muted); font-size: .9rem; }
+  .note { color: var(--muted); font-size: .88rem; }
 
-  footer {
-    margin-top: 3.5rem;
-    padding-top: 1.25rem;
+  .contact {
+    margin-top: 2.75rem;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: .82rem;
   }
+  .contact a { font-size: 1.02rem; }
 </style>
 </head>
 <body>
@@ -134,21 +133,16 @@
   </section>
 
   <section>
-    <h2>Code</h2>
-    <ul>
-      <li><a href="https://github.com/YukihiroKimuraJ">GitHub</a></li>
-    </ul>
-  </section>
-
-  <section>
     <h2>Elsewhere</h2>
     <ul>
-      <li><a href="https://x.com/yukihirokimuraj">X</a></li>
-      <li><a href="mailto:me@yukihirokimura.com">me@yukihirokimura.com</a></li>
+      <li><a href="https://github.com/YukihiroKimuraJ">GitHub</a> <span class="note">code</span></li>
+      <li><a href="https://x.com/yukihirokimuraj">X</a> <span class="note">@yukihirokimuraj</span></li>
     </ul>
   </section>
 
-  <footer>Tokyo, Japan</footer>
+  <section class="contact">
+    <a href="mailto:me@yukihirokimura.com">me@yukihirokimura.com</a>
+  </section>
 </main>
 </body>
 </html>
