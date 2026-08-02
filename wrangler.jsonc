@@ -10,10 +10,9 @@
     "directory": "./public"
   },
 
-  // Once the custom domain is attached, flip this to false to retire the
-  // *.workers.dev URL — the account subdomain is derived from the account
-  // name and ends up in the hostname.
-  "workers_dev": true,
+  // yukihirokimura.com is the canonical hostname. Serving the same page on
+  // *.workers.dev as well only invites search engines to index a second copy.
+  "workers_dev": false,
 
   "observability": {
     "enabled": true
